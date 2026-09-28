@@ -15,16 +15,17 @@ Everyday creators are already busy on social-first platforms where starting is f
 
 > *"How can Blibli formulate a highly scalable strategy to market for its Affiliate program to aggressively acquire and activate mass market creators across diverse demographics, while leveraging its premium omnichannel ecosystem to win market share against algorithm-driven, natively social competitors?"*
 
-Two things sit inside that question, and they're easy to blur together:
-
+That question actually comes down to two things:
 1. **Acquisition.** How do we get a Nano Affiliate (under 10K followers) to sign up?
 2. **Activation and retention.** How do we get them to share a link *tomorrow*, and the day after?
 
-Most affiliate programs are good at the first and quietly lose people at the second. **This dashboard is our answer to the second half**, and it's designed to sit behind whatever acquisition campaign Blibli runs.
+Most affiliate programs are good at the first and quietly lose people at the second. **This dashboard is our answer to the second half** and it's designed to sit behind whatever acquisition campaign Blibli runs.
 
 ## Meet Blibli Affiliate Games
 
-A new Affiliate signs up, generates one link, never shares it, and drifts away. That's the leak. Social-native platforms plug it with feeds and algorithmic rewards; Blibli doesn't have a feed, so it needs another reason to open the app every day. We give it one: small daily goals, visible progress, and recognition among people in a similar situation. The first win takes about a minute, and every win after that is a little bigger.
+A new Affiliate signs up, generates one link, never shares it, and drifts away. That's **where we're losing them** and **the gap** we want to close. Social-native platforms keep users coming back with feeds and algorithmic rewards. Blibli doesn't have a feed so it needs another reason to open the app every day. **Our answer: small daily goals, visible progress, and recognition from people in a similar situation**.
+
+The first action takes about a minute. From there, *each completed action gives Affiliates a reason to keep going*.
 
 ## How the prototype maps to the casebook
 
@@ -32,7 +33,7 @@ A new Affiliate signs up, generates one link, never shares it, and drifts away. 
 |---|---|
 | **Analysis 2**: reduce friction for first-time affiliates and drive daily link sharing | **Nano Affiliate Kit**: pick a category, pick a product, get a working link plus a ready-to-post caption in one tap. **Daily quests** and a **streak** give people a reason to come back tomorrow. |
 | **Analysis 1**: attract mass-market affiliates without losing the premium, original-product reputation | Every generated caption carries the "100% original" message, so a first-time Affiliate can promote everyday items without worrying about their own credibility. **Earnings Lab** shows what a handful of sales is actually worth. |
-| **Analysis 3**: content that TikTok-native networks can't copy | The Kit spans Ranch Market groceries, Blibli Mall electronics and tiket.com travel and events, so one Affiliate can build a mixed lifestyle feed from a single dashboard. A pure social platform doesn't own that range. |
+| **Analysis 3**: content that TikTok-native networks can't copy | The Kit spans Ranch Market groceries, Blibli Mall electronics, and tiket.com travel and events, so one Affiliate can build a mixed lifestyle feed from a single dashboard. |
 | **Analysis 4**: long-term loyalty from top performers | **XP levels**, **badges**, a **Reward Vault**, and **leaderboards** give people something to work toward beyond the first commission. |
 | **Guideline 3**: reach untapped Tier-2 and Tier-3 cities | **Tier leaderboards** (see below) and a city/regency selector built around the competition's actual Tier 1/2/3 list. |
 | **Guideline 4**: keep new affiliates active and converting | Streak bonuses, quest sequencing ("Your Next Move"), and a reward loop tied to real actions: links, shares, and transactions. |
@@ -52,7 +53,7 @@ A new Affiliate signs up, generates one link, never shares it, and drifts away. 
 - **Overall leaderboard.** Filter by any city or regency, and rank by Top XP, Top Streak, or Most Active (links).
 - **Per-tier leaderboards.** Separate boards for Tier 1, Tier 2 and Tier 3.
 
-The tier boards are a deliberate design choice, not a bonus. If someone in a Tier-3 regency is ranked against Jakarta Selatan from day one, they'll see they're far behind and quietly stop opening the app. Ranking people against peers in comparable markets keeps the competition winnable, and winnable competition is what keeps people coming back. It also makes Tier-2 and Tier-3 growth visible in its own right, which is exactly the "untapped market" the case asks about.
+The tier boards are a deliberate design choice. If someone in a Tier-3 regency is ranked against Jakarta Selatan, the gap can feel impossible to close. Instead, Affiliates compete with peers in comparable markets. That makes the competition feel more relevant while also making Tier-2 and Tier-3 growth visible in its own right which directly supporting this case's focus on untapped markets.
 
 Cities and tiers in the demo follow the competition's published lists:
 - **Tier 1:** Jakarta Pusat, Jakarta Selatan, Bandung Raya, Kota Tangerang
@@ -69,15 +70,14 @@ Cities and tiers in the demo follow the competition's published lists:
 
 ## What's real and what's simulated
 
-This is a static prototype, so we want to be upfront about it.
-
+This is a static prototype, so we want to be upfront about what's simulated
 - **Simulated:** all transactions, the affiliate links (they're placeholder URLs), leaderboard rivals, and the Rp75,000-per-sale commission in Earnings Lab. The XP values and level thresholds are tuning assumptions, not measured data.
-- **From the casebook:** the problem framing, the target segment (Nano Affiliates under 10K followers), the Tier 1/2/3 city lists, the ecosystem (Blibli Mall, tiket.com, Ranch Market), and the 100% originality guarantee.
-- **Not claimed:** we're not presenting any result or uplift number from this prototype. The point is to show the mechanics we'd A/B test, not to promise a figure.
+- **From the casebook:** the problem framing, the target segment (Nano Affiliates under 10K followers), the ecosystem (Blibli Mall, tiket.com, Ranch Market), and the 100% originality guarantee.
+- **Not claimed:** we're not presenting any result or uplift number from this prototype. The point is to show the mechanics we'd A/B test.
 
 ## How it would go live
 
-In a real rollout, the prototype's mock actions become live data: link generation and click and transaction events come from the affiliate backend, and tier assignment comes from Blibli's own city classification. A sensible first step would be a limited pilot in a few Tier-2 and Tier-3 cities, measuring the numbers that matter for this problem: first-link rate, seven-day return rate, and links shared per active Affiliate. That tells us whether the loop works before any wider spend.
+In a real rollout, the prototype's mock actions become live data: link generation, clicks, and transaction events come from the affiliate backend, and tier assignment comes from Blibli's own city classification. A sensible first step would be a limited pilot in a few Tier-2 and Tier-3 cities, measuring the numbers that matter for this problem: first-link rate, seven-day return rate, and links shared per active Affiliate. That would show whether the loop is working before any wider rollout.
 
 ## Run it
 
