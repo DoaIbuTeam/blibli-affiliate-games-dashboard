@@ -3,7 +3,7 @@
 **A gamified home base for Blibli Affiliates, built to get first-time Nano Affiliates started and keep them coming back.**
 
 Prototype for the MCC Career Insight × Blibli case competition.
-Live demo: `<add your GitHub Pages link here>`
+Live demo: `https://doaibuteam.github.io/blibli-affiliate-games-dashboard/`
 
 ---
 
