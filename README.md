@@ -46,7 +46,7 @@ The first action takes about a minute. From there, *each completed action gives 
 4. **XP, levels and journey.** Five levels from Explorer to Elite Affiliate, with a visible path so progress never feels abstract.
 5. **Badges.** Seven badges, from *First Blood* to *Quest Master*, each with a progress counter that shows how close you are.
 6. **Reward Vault.** XP becomes something you can spend (vouchers, content packs, campaign boosts, a premium badge), which keeps the loop from being points for points' sake.
-7.**Earnings Lab.** A quick projection of commission at different sales targets, plus a milestone bar. Motivation works better when the number is concrete.
+7. **Earnings Lab.** A quick projection of commission at different sales targets, plus a milestone bar. Motivation works better when the number is concrete.
 
 ### Leaderboards, and why there are two kinds
 
