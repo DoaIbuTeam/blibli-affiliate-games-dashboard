@@ -39,19 +39,13 @@ A new Affiliate signs up, generates one link, never shares it, and drifts away. 
 
 ## Feature tour
 
-**Nano Affiliate Kit and Nano Quests.** The lowest-friction path in the app. Two starter quests ("generate 1 link from the Kit", "share it to one Story or WhatsApp group") are deliberately tiny so a brand-new Affiliate finishes them in the first session. Nano badges (*Nano Starter*, *Nano Hustler*) mark the milestones.
-
-**Daily quests.** Three difficulty levels (Easy, Medium, Hard) so people pick an intensity that fits their day: share 3 products, generate 5 links, log 3 transactions. Harder quests pay more XP.
-
-**Streaks.** Consecutive active days build a streak, and the first action of each day earns a bonus.
-
-**XP, levels and journey.** Five levels from Explorer to Elite Affiliate, with a visible path so progress never feels abstract.
-
-**Badges.** Seven badges, from *First Blood* to *Quest Master*, each with a progress counter that shows how close you are.
-
-**Reward Vault.** XP becomes something you can spend (vouchers, content packs, campaign boosts, a premium badge), which keeps the loop from being points for points' sake.
-
-**Earnings Lab.** A quick projection of commission at different sales targets, plus a milestone bar. Motivation works better when the number is concrete.
+1. **Nano Affiliate Kit and Nano Quests.** The lowest-friction path in the app. Two starter quests ("generate 1 link from the Kit", "share it to one Story or WhatsApp group") are deliberately tiny so a brand-new Affiliate finishes them in the first session. Nano badges (*Nano Starter*, *Nano Hustler*) mark the milestones.
+2. **Daily quests.** Three difficulty levels (Easy, Medium, Hard) so people pick an intensity that fits their day: share 3 products, generate 5 links, log 3 transactions. Harder quests pay more XP.
+3. **Streaks.** Consecutive active days build a streak, and the first action of each day earns a bonus.
+4. **XP, levels and journey.** Five levels from Explorer to Elite Affiliate, with a visible path so progress never feels abstract.
+5. **Badges.** Seven badges, from *First Blood* to *Quest Master*, each with a progress counter that shows how close you are.
+6. **Reward Vault.** XP becomes something you can spend (vouchers, content packs, campaign boosts, a premium badge), which keeps the loop from being points for points' sake.
+7.**Earnings Lab.** A quick projection of commission at different sales targets, plus a milestone bar. Motivation works better when the number is concrete.
 
 ### Leaderboards, and why there are two kinds
 
@@ -61,7 +55,6 @@ A new Affiliate signs up, generates one link, never shares it, and drifts away. 
 The tier boards are a deliberate design choice, not a bonus. If someone in a Tier-3 regency is ranked against Jakarta Selatan from day one, they'll see they're far behind and quietly stop opening the app. Ranking people against peers in comparable markets keeps the competition winnable, and winnable competition is what keeps people coming back. It also makes Tier-2 and Tier-3 growth visible in its own right, which is exactly the "untapped market" the case asks about.
 
 Cities and tiers in the demo follow the competition's published lists:
-
 - **Tier 1:** Jakarta Pusat, Jakarta Selatan, Bandung Raya, Kota Tangerang
 - **Tier 2:** Sukabumi, Garut, Kota Surabaya, Karawang, Cianjur, Malang, Jember, Kota Medan, Cirebon, Sidoarjo
 - **Tier 3:** Kutai Kartanegara, Kota Padang, Kampar, Banyu Asin, Sukoharjo, Karanganyar, Wonosobo, Kota Samarinda, Kudus, Pamekasan
