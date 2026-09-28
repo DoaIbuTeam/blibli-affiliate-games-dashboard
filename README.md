@@ -40,9 +40,9 @@ The first action takes about a minute. From there, *each completed action gives 
 
 ## Feature tour
 
-1. **Nano Affiliate Kit and Nano Quests.** The lowest-friction path in the app. Two starter quests ("generate 1 link from the Kit", "share it to one Story or WhatsApp group") are deliberately tiny so a brand-new Affiliate finishes them in the first session. Nano badges (*Nano Starter*, *Nano Hustler*) mark the milestones.
+1. **Nano Affiliate Kit and Nano Quests.** Two starter quests ("generate 1 link from the Kit", "share it to one Story or WhatsApp group") are deliberately tiny so a brand-new Affiliate finishes them in the first session. Nano badges (*Nano Starter*, *Nano Hustler*) mark the milestones.
 2. **Daily quests.** Three difficulty levels (Easy, Medium, Hard) so people pick an intensity that fits their day: share 3 products, generate 5 links, log 3 transactions. Harder quests pay more XP.
-3. **Streaks.** Consecutive active days build a streak, and the first action of each day earns a bonus.
+3. **Streaks.** Consecutive active days build a streak and the first action of each day earns a bonus.
 4. **XP, levels and journey.** Five levels from Explorer to Elite Affiliate, with a visible path so progress never feels abstract.
 5. **Badges.** Seven badges, from *First Blood* to *Quest Master*, each with a progress counter that shows how close you are.
 6. **Reward Vault.** XP becomes something you can spend (vouchers, content packs, campaign boosts, a premium badge), which keeps the loop from being points for points' sake.
