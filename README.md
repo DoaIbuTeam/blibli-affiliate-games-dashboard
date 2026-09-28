@@ -65,7 +65,7 @@ Cities and tiers in the demo follow the competition's published lists:
 1. Open the demo and pick a city. Notice it shows its tier, e.g. `(T-3) Kota Padang`.
 2. In **Nano Affiliate Kit**, choose *Travel & Event* and tap **Generate** on any item. You get a link and a caption immediately, plus XP.
 3. Tap **Sudah aku share**. Both Nano Quests complete, a badge unlocks, and **Your Next Move** points to what's next.
-4. Scroll to **Leaderboard per Tier**. Switch between Tier 1, 2 and 3 and see where you'd rank against peers in your own tier.
+4. Scroll to **Leaderboard per Tier**. Switch between Tier 1, 2, and 3 and see where you'd rank against peers in your own tier.
 5. Use **+1 Transaksi** in Daily Actions to watch commission, XP and the Earnings Lab milestone move together.
 
 ## What's real and what's simulated
