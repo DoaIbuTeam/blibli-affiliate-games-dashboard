@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blibli Affiliate Dashboard 2.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img id="brandLogo" src="assets/logo-icon.png" alt="Blibli Affiliate Games" onerror="this.style.display='none'; document.getElementById('brandFallback').style.display='inline';" />
+    <span id="brandFallback" class="brand-fallback" style="display:none;">blibli</span>
+    <span class="brand-divider">|</span>
+    <span class="brand-sub">Affiliate Dashboard 2.0</span>
+  </div>
+  <div class="topbar-user" id="topbarUser"></div>
+</header>
+
+<main class="wrap">
+
+  <!-- First-visit input: nama & kota -->
+  <section id="onboardCard" class="card onboard hidden">
+    <img src="assets/logo-full.png" alt="Blibli Affiliate Games" class="onboard-logo" onerror="this.style.display='none';" />
+    <h1>Selamat datang, Affiliate!</h1>
+    <p class="muted">Isi profil singkat kamu buat mulai perjalanan Affiliate Journey.</p>
+    <form id="onboardForm">
+      <label>Nama
+        <input type="text" id="onboardName" placeholder="Nama kamu" required />
+      </label>
+      <label>Kota/Kabupaten
+        <select id="onboardCity" required></select>
+      </label>
+      <button type="submit" class="btn btn-primary">Mulai Journey</button>
+    </form>
+  </section>
+
+  <div id="dashboard" class="dashboard hidden">
+
+    <!-- Profile + Level header -->
+    <section class="card level-card">
+      <div class="level-top">
+        <div>
+          <div class="level-hi">Hi, <span id="userName"></span> 👋</div>
+          <div class="level-name"><span id="levelName"></span></div>
+        </div>
+        <div class="streak-pill">🔥 <span id="streakCount">0</span> Day Streak</div>
+      </div>
+      <div class="xp-bar-track">
+        <div class="xp-bar-fill" id="xpBarFill" style="width:0%"></div>
+      </div>
+      <div class="xp-bar-label" id="xpBarLabel"></div>
+    </section>
+
+    <!-- Next move -->
+    <section class="card next-move">
+      <div class="next-move-label">Your Next Move</div>
+      <p id="nextMoveText" class="next-move-text"></p>
+    </section>
+
+    <!-- Today's Quest -->
+    <section class="card">
+      <h2>Today's Quest</h2>
+      <p class="muted">Pilih intensitas sesuai mood kamu hari ini — makin susah, makin gede XP-nya.</p>
+      <div id="questList" class="quest-list"></div>
+
+      <div class="nano-quest-head">
+        <h3>🌱 Nano Affiliate Quest</h3>
+        <span class="nano-pill">Buat pemula · followers &lt; 10K</span>
+      </div>
+      <p class="muted">Quest ringan buat Nano Affiliate — cukup 2 langkah kecil, XP langsung masuk.</p>
+      <div id="nanoQuestList" class="quest-list"></div>
+    </section>
+
+    <div class="two-col">
+      <section class="col">
+
+        <!-- Nano Affiliate Kit -->
+        <div class="card nano-card">
+          <div class="nano-card-head">
+            <h2>🌱 Nano Affiliate Kit</h2>
+            <span class="nano-pill">1 tap · tanpa ribet</span>
+          </div>
+          <p class="muted">Baru mulai? Pilih kategori, pilih produk, langsung dapat link affiliate + caption siap posting. Semua produk 100% original, jadi aman buat dipromosiin ke followers kamu.</p>
+          <div id="nanoCats" class="nano-cats"></div>
+          <div id="nanoItems" class="nano-items"></div>
+          <div id="nanoResult" class="result-box hidden"></div>
+        </div>
+
+        <!-- Quick action: link generator -->
+        <div class="card">
+          <h2>⚡ Quick Action: Generate Link</h2>
+          <p class="muted">Ngisi progress quest "Generate 5 link" otomatis tiap kamu bikin link baru.</p>
+          <form id="linkForm" class="stack-form">
+            <input type="text" id="productName" placeholder="Nama produk" required />
+            <input type="url" id="productUrl" placeholder="URL produk di Blibli" required />
+            <button type="submit" class="btn btn-primary">Generate Link</button>
+          </form>
+          <div id="linkResult" class="result-box hidden"></div>
+        </div>
+
+        <!-- Simulated actions: share & transaction -->
+        <div class="card">
+          <h2>Aksi Harian</h2>
+          <p class="muted">Simulasi aktivitas affiliate (demo prototype, belum terhubung ke data transaksi asli).</p>
+          <div class="action-row">
+            <div>
+              <div class="action-title">Share produk ke audiens</div>
+              <div class="action-sub">+5 XP · isi progress quest Easy</div>
+            </div>
+            <button id="shareBtn" class="btn btn-outline">+1 Share</button>
+          </div>
+          <div class="action-row">
+            <div>
+              <div class="action-title">Catat transaksi berhasil</div>
+              <div class="action-sub">+50 XP · isi progress quest Hard</div>
+            </div>
+            <button id="txBtn" class="btn btn-outline">+1 Transaksi</button>
+          </div>
+        </div>
+
+        <!-- Earnings Lab -->
+        <div class="card">
+          <h2>💰 Earnings Lab</h2>
+          <p class="muted">Estimasi komisi kalau kamu tembus target penjualan tertentu.</p>
+          <table class="earnings-table" id="earningsTable"></table>
+          <div class="milestone-block">
+            <div class="milestone-label" id="milestoneLabel"></div>
+            <div class="xp-bar-track small">
+              <div class="xp-bar-fill amber" id="milestoneFill" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="col">
+
+        <!-- Affiliate Journey -->
+        <div class="card">
+          <h2>🗺️ Your Affiliate Journey</h2>
+          <div id="journeyTrack" class="journey-track"></div>
+        </div>
+
+        <!-- Badges -->
+        <div class="card">
+          <h2>🏅 Badges</h2>
+          <div id="badgeGrid" class="badge-grid"></div>
+        </div>
+
+        <!-- Reward Vault -->
+        <div class="card">
+          <div class="reward-head">
+            <h2>🎁 Reward Vault</h2>
+            <div class="wallet-xp"><span id="walletXp">0</span> XP tersedia</div>
+          </div>
+          <div id="rewardList" class="reward-list"></div>
+        </div>
+
+        <!-- Leaderboard -->
+        <div class="card">
+          <div class="leaderboard-head">
+            <h2>🏆 Leaderboard</h2>
+            <select id="cityFilter"></select>
+          </div>
+          <div class="metric-tabs" id="metricTabs">
+            <button class="metric-tab active" data-metric="xp">Top XP</button>
+            <button class="metric-tab" data-metric="streak">Top Streak</button>
+            <button class="metric-tab" data-metric="links">Most Active</button>
+          </div>
+          <table class="leaderboard-table">
+            <thead><tr><th>Rank</th><th>Affiliate</th><th>Kota/Kabupaten</th><th>Skor</th></tr></thead>
+            <tbody id="leaderboardBody"></tbody>
+          </table>
+        </div>
+
+        <!-- Leaderboard per Tier -->
+        <div class="card">
+          <div class="leaderboard-head">
+            <h2>🏅 Leaderboard per Tier</h2>
+          </div>
+          <div class="metric-tabs tier-tabs" id="tierTabs">
+            <button class="metric-tab active" data-tier="1">Tier 1</button>
+            <button class="metric-tab" data-tier="2">Tier 2</button>
+            <button class="metric-tab" data-tier="3">Tier 3</button>
+          </div>
+          <div class="metric-tabs" id="tierMetricTabs">
+            <button class="metric-tab active" data-metric="xp">Top XP</button>
+            <button class="metric-tab" data-metric="streak">Top Streak</button>
+            <button class="metric-tab" data-metric="links">Most Active</button>
+          </div>
+          <div class="tier-note" id="tierNote"></div>
+          <table class="leaderboard-table">
+            <thead><tr><th>Rank</th><th>Affiliate</th><th>Kota/Kabupaten</th><th>Skor</th></tr></thead>
+            <tbody id="tierBody"></tbody>
+          </table>
+        </div>
+
+      </section>
+    </div>
+
+    <footer class="footer-bar">
+      <button id="resetBtn" class="reset-link">Reset demo data</button>
+    </footer>
+
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
