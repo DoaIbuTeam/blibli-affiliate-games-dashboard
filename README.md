@@ -9,7 +9,7 @@ Live demo: `<add your GitHub Pages link here>`
 
 ## The problem we're solving
 
-The casebook puts it plainly: Blibli has a strong ecosystem and a 100% original-product guarantee, but its Affiliate program has an **adoption gap**.
+Blibli has a strong ecosystem and a 100% original-product guarantee, but its Affiliate program has an **adoption gap**.
 
 Everyday creators are already busy on social-first platforms where starting is free, links spread through the algorithm, and small impulse purchases dominate. Blibli is still seen as the premium destination for bigger-ticket items. Meanwhile, social commerce already makes up nearly a quarter of Indonesia's e-commerce GMV, so the window to become an everyday Affiliate's go-to income stream is narrowing.
 
@@ -22,7 +22,7 @@ Two things sit inside that question, and they're easy to blur together:
 
 Most affiliate programs are good at the first and quietly lose people at the second. **This dashboard is our answer to the second half**, and it's designed to sit behind whatever acquisition campaign Blibli runs.
 
-## Our idea in one paragraph
+## Meet Blibli Affiliate Games
 
 A new Affiliate signs up, generates one link, never shares it, and drifts away. That's the leak. Social-native platforms plug it with feeds and algorithmic rewards; Blibli doesn't have a feed, so it needs another reason to open the app every day. We give it one: small daily goals, visible progress, and recognition among people in a similar situation. The first win takes about a minute, and every win after that is a little bigger.
 
