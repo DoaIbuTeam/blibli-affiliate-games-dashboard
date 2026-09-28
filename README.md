@@ -72,7 +72,8 @@ Cities and tiers in the demo follow the competition's published lists:
 
 This is a static prototype, so we want to be upfront about what's simulated
 - **Simulated:** all transactions, the affiliate links (they're placeholder URLs), leaderboard rivals, and the Rp75,000-per-sale commission in Earnings Lab. The XP values and level thresholds are tuning assumptions, not measured data.
-- **From the casebook:** the problem framing, the target segment (Nano Affiliates under 10K followers), the ecosystem (Blibli Mall, tiket.com, Ranch Market), and the 100% originality guarantee.
+- **From the casebook:** the problem framing, the target segment (Nano Affiliates under 10K followers), the focus on untapped markets (Tier 2 & 3 cities), the Blibli ecosystem, and the 100% originality guarantee.
+- **From our data:** the specific Tier 1 and Tier 2 city/regency classification used in this demo.
 - **Not claimed:** we're not presenting any result or uplift number from this prototype. The point is to show the mechanics we'd A/B test.
 
 ## How it would go live
@@ -82,10 +83,8 @@ In a real rollout, the prototype's mock actions become live data: link generatio
 ## Run it
 
 It's plain HTML, CSS and JavaScript, so there's nothing to install.
-
 - **Locally:** double-click `index.html`.
 - **GitHub Pages:** push the files to a repo, go to *Settings → Pages*, choose the `main` branch and `/ (root)`, and save. The site is live in a minute or two.
-
 Progress is saved in your browser's `localStorage`. The **Reset demo data** link at the bottom starts everything over, which is handy when you want to run the walkthrough again.
 
 ## Files
